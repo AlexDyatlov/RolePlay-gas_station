@@ -1,0 +1,176 @@
+@media(max-width: 1920px){
+  .gasstation{
+    padding: 185px 0 20px;
+    &__inner{
+      max-width: 1670px
+    }
+  }
+  .content__item{
+    padding: 80px 50px 30px;
+    max-width: 545px;
+    min-height: 700px;
+    &-title{
+      font-size: 26px;
+      margin-bottom: 60px;
+    }
+    &-text{
+      font-size: 15px;
+    }
+  }
+  .content__item-icon1::before {
+    width: 360px;
+    height: 170px;
+    right: -15px;
+  }
+  .content__item-icon2{
+    &::before {
+      width: 175px;
+      height: 185px;
+    }
+    &::after{
+      width: 100px;
+      height: 90px;
+    }
+  }
+  .content__item-icon1::after{
+    top: 80px;
+  }
+  .info__box{
+    margin-bottom: 60px;
+    &::before{
+      width: 100px;
+      height: 90px;
+      right: -20px;
+      top: -125px;
+    }
+  }
+  .content__description{
+    &-text{
+      width: 265px;
+    }
+  }
+  .box__price{
+    margin-bottom: 60px;
+  }
+}
+@media(max-width: 1366px){
+  .gasstation{
+    padding: 90px 0 20px;
+    &__inner{
+      max-width: 1290px;
+    }
+  }
+  .content__item{
+    padding: 55px 40px 25px;
+    max-width: 420px;
+    min-height: 555px;
+    &-title{
+      font-size: 22px;
+    }
+    &-text{
+      font-size: 14px;
+    }
+    &-btn{
+      width: 105px;
+      height: 55px;
+      font-size: 15px;
+    }
+  }
+  .content{
+    &__box{
+      margin-bottom: 80px;
+    }
+    &__description{
+      margin-bottom: 55px;
+    }
+  }
+  .content__description-text{
+    width: 213px;
+    span {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  } 
+  .box__price{
+    width: 340px;
+    margin-bottom: 45px;
+    &-text{
+      font-size: 15px;
+    }
+  }
+  .content__item-icon1{
+    &::after {
+      right: 60px;
+      top: 60px;
+      width: 85px;
+      height: 120px;
+    }
+  }
+  .info__box{
+    width: 280px;
+    margin-bottom: 40px;
+    &::before {
+      width: 75px;
+      height: 60px;
+      right: -65px;
+      top: -105px;
+    }
+    &-item{
+      width: 125px;
+      min-height: 125px;
+      padding: 45px 5px 20px;
+      &::before{
+        left: 40px;
+        top: 15px;
+      }
+    }
+    &-text{
+      font-size: 14px;
+    }
+    .item-icon1::before {
+      width: 50px;
+      height: 60px;
+    }
+    .item-icon2::before {
+      width: 85px;
+      height: 58px;
+    }
+  }
+  .content__item-icon2{
+    &::after {
+      width: 75px;
+      height: 60px;
+      left: 50px;
+      bottom: 40px;
+    }
+    &::before {
+      width: 155px;
+      height: 165px;
+    }
+  }
+  .btn{
+    font-size: 19px;
+    height: 65px;
+  }
+  .quantity{
+    input{
+      height: 38px;
+      width: 150px;
+      font-size: 19px;
+    }
+    &-button{
+      width: 56px;
+      height: 50px;
+      font-size: 19px;
+      padding: 13px 20px;
+      top: -7px;
+    }
+    &-down{
+      padding: 13px 23px;
+      left: -25px;
+    }
+    &-up{
+      right: -25px;
+    }
+  }
+}
