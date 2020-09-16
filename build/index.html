@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
   </head>
@@ -13,8 +14,63 @@
 
 </header>
   <!-- WRITE CODE HERE -->
-
-
+  <main class="gasstation" style="background-image: url('images/bg.png');">
+    <div class="container">
+      <div class="gasstation__inner">
+        <div class="content__item content__item-icon1">
+          <p class="content__item-text">ბენზინ გასამართი სადგური</p>
+          <div class="content__item-title">ავზის შევსება</div>
+          <div class="content__box">
+            <div class="content__box-info">ლიტრი<span>50</span></div>
+            <div class="content__box-info">ფასი<span>200$</span></div>
+          </div>
+          <button class="btn content__item-button" type="button">მთლიანი ავზის გავსება</button>
+        </div>
+        <div class="content__item">
+          <p class="content__item-text">შეავსეთ სასურველი რაოდენობა</p>
+          <div class="content__item-title">შეავსე რაოდენობით</div>
+          <div class="info__box">
+            <div class="info__box-item item-icon1">
+              <div class="info__box-text">
+                ავზშია:<span class="info__box-numbers">15 / <span>100</span></span>
+              </div>
+            </div>
+            <div class="info__box-item item-icon2">
+              <div class="info__box-text">
+                ლიტრის ფასი:<span class="info__box-numbers">10%</span>
+              </div>
+            </div>
+          </div>
+          <div class="box__price">
+            <div class="quantity">
+              <input class="quantity__number" type="number" min="1" max="10" step="1" value="2">
+            </div>
+            <div class="box__price-text">
+              ფასი შეადგენს:<span>400$</span>
+            </div>
+          </div>
+          <p class="content__item-payment">აირჩეთ გადახდის მეთოდი:</p>
+          <div class="content__items">
+            <button class="content__item-btn" type="button">ხელზე</button>
+            <button class="content__item-btn" type="button">ბარათით</button>
+            <button class="content__item-btn" type="button">მთავრობა</button>
+          </div>
+        </div>
+        <div class="content__item content__item-icon2">
+          <p class="content__item-text">დამატებითი შენაძენი</p>
+          <div class="content__item-title">საწვავის კალისტრა</div>
+          <div class="conent__description">
+            <div class="conent__description-price">ფასი<span>500$</span></div>
+            <p class="conent__description-text">
+              აღწერა:
+              <span>გაგითავდათ ბენზინი? ნივთი რომელიც ყოველთვის უნდა გეგდოთ თქვენს საბარგულში.</span>
+            </p>
+          </div>
+          <button class="btn content__item-button" type="button">კალისტრის ყიდვა</button>
+        </div>
+      </div>
+    </div>
+  </main>
   <!-- STOP WRITE CODE -->
   <footer>
   

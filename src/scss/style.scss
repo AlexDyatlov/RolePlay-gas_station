@@ -2,16 +2,285 @@
 @import 'vars';
 @import 'global';
 
-
-
-
-
-
-
-
-
-
-
+.gasstation{
+  min-height: 100%;
+  padding: 298px 0 259px;
+  background: center / cover no-repeat;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1970px;
+    margin: 0 auto;
+  }
+}
+.btn{
+  position: relative;
+  height: 75px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  background: #191a28;
+  color: #f5f5f5;
+  font-size: 23px;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  transition: 1s all ease;
+  &::before{
+  content: '';
+  position: absolute;
+  background-color: #03f6ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  }
+}
+.content__item{
+  max-width: 644px;
+  width: 100%;
+  min-height: 883px;
+  border-radius: 25px;
+  background-color: rgb(29, 31, 47);
+  padding: 118px 92px 49px;
+  position: relative;
+  &-text{
+    color: #4b4f68;
+  }
+  &-title{
+    font-size: 38px;
+    margin-bottom: 80px;
+    z-index: 5;
+    position: relative;
+  }
+  &-button{
+    z-index: 5;
+    &::before{
+      width: 100%;
+      height: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:hover{
+      color: #1d1f2f;
+      box-shadow: 0px 0px 20px -5px rgba(3,246,255,1);
+      &::before{
+        height: 480%;
+      }
+    }
+  }
+  &-icon1{
+    &::before{
+      position: absolute;
+      content: '';
+      background: center / cover no-repeat url('../images/icons/pistolet.png');
+      right: -25px;
+      bottom: 0;
+      width: 623px;
+      height: 298px;
+      z-index: 2;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background: center / cover no-repeat url('../images/icons/gass-icon.png');
+      right: 80px;
+      top: 116px;
+      width: 116px;
+      height: 159px;
+    }
+  }
+  &-payment{
+    font-size: 16px;
+    color: #4b4f68;
+    margin-bottom: 25px;
+  }
+}
+.content__box{
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+  &-info{
+    color: #4b4f68;
+    span{
+      display: block;
+      color: #f4f4f4;
+      font-size: 25px;
+    }
+  }
+}
+.info__box{
+  display: flex;
+  justify-content: space-between;
+  width: 362px;
+  margin-bottom: 95px;
+  position: relative;
+  &-item{
+    width: 167px;
+    min-height: 167px;
+    border-radius: 25px;
+    background-color: rgb(25, 26, 40);
+    padding: 80px 20px 35px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 55px;
+      top: 35px;
+    }
+  }
+  &-text{
+    font-size: 16px;
+    color: #4b4f68;
+  }
+  &-numbers{
+    display: block;
+    font-size: 21px;
+    color: #f4f4f4;
+    margin-top: 7px;
+    span{
+      color: #35374c;
+    }
+  }
+  .item-icon1::before{
+    background: center / cover no-repeat url('../images/icons/station.png');
+    width: 63px;
+    height: 73px;
+  }
+  .item-icon2::before{
+    background: center / cover no-repeat url('../images/icons/money.png');
+    width: 106px;
+    height: 76px;
+  }
+  &::before{
+    position: absolute;
+    content: '';
+    background: center / cover no-repeat url('../images/logo.png');
+    width: 116px;
+    height: 102px;
+    right: -130px;
+    top: -150px;
+  }
+}
+.box__price{
+  display: flex;
+  justify-content: space-between;
+  width: 362px;
+  margin-bottom: 97px;
+  &-text{
+    color: #4b4f68;
+    font-size: 16px;
+    span{
+      display: block;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}
+.quantity{
+  position: relative;
+  input{
+    height: 47px;
+    width: 157px;
+    font-size: 21px;
+    color: #fff;
+    background: #191a28;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 25px;
+  }
+  &-button{
+    cursor: pointer;
+    position: absolute;
+    font-size: 21px;
+    color: #fff;
+    top: -5px;
+    border-radius: 25px;
+    background-color: #22253c;
+    width: 63px;
+    height: 57px;
+    border-radius: 35%;
+    padding: 15px 23px;
+  }
+  &-up{
+    right: -30px;
+  }
+  &-down{
+    padding: 15px 27px;
+    left: -25px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.content__items{
+  display: flex;
+  justify-content: space-between;
+}
+.content__item-btn{
+  width: 137px;
+  height: 57px;
+  background: #191a28;
+  color: #f5f5f5;
+  border-radius: 20px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    background: #03f6ff;
+    color: #191a28;
+    box-shadow: 0px 0px 20px -5px rgba(3,246,255,1);
+  }
+}
+.conent__description{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  &-price{
+    color: #4b4f68;
+    span{
+      display: block;
+      font-size: 25px;
+      color: #f4f4f4;
+    }
+  }
+  &-text{
+    max-width: 300px;
+    color: #fff;
+    span{
+      display: block;
+      color: #4e5167;
+      margin-top: 5px;
+      font-size: 15px;
+      line-height: 23px;
+    }
+  }
+}
+.content__item-icon2{
+  &::before{
+    position: absolute;
+    content: '';
+    background: center / cover no-repeat url('../images/icons/canister.png');
+    right: -15px;
+    bottom: -25px;
+    width: 293px;
+    height: 307px;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    background: center / cover no-repeat url('../images/logo.png');
+    width: 116px;
+    height: 102px;
+    left: 80px;
+    bottom: 55px;
+  }
+}
 
 
 @import 'media';
